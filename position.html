@@ -10,7 +10,10 @@
             display: flex;
             flex-wrap: wrap;
         }
-        
+        .photo-frame:hover .photo img {
+            transform: skew(-30deg);
+            transition: transform 3s ;
+        }
         .photo-frame{
             width: 280px;
             height: 200px;
@@ -18,6 +21,7 @@
             border: 2px solid rgb(8, 99, 219);
             border-radius: 5px;
             position: relative;
+            overflow: hidden;
 
         }
         .photo-frame .photo img{
@@ -37,11 +41,12 @@
         }
         .h1{
             color: rgb(236, 20, 20);
+            background-color: rgb(215, 204, 226);
             
         }
         .photo-frame:hover .photo-details{
             background-color:rgba(189, 190, 126 , .3);
-            display: block;
+           display: block; 
         }
     </style> 
 </head>
